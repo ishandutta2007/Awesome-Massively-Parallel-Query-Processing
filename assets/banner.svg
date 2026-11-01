@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background linear gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c16" />
+      <stop offset="50%" stop-color="#0d1527" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <!-- Glowing accents -->
+    <linearGradient id="primaryGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(30, 41, 59, 0.7)" />
+      <stop offset="100%" stop-color="rgba(15, 23, 42, 0.85)" />
+    </linearGradient>
+
+    <filter id="glowFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 46px;
+        fill: #ffffff;
+        letter-spacing: -0.5px;
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        fill: #94a3b8;
+      }
+      .badge-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        fill: #38bdf8;
+      }
+      .metric-title {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        fill: #f8fafc;
+      }
+      .metric-sub {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        fill: #64748b;
+      }
+
+      /* Animated query stream particles */
+      @keyframes streamFlow {
+        0% { stroke-dashoffset: 600; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.7; transform: scale(1.05); }
+      }
+      @keyframes floatNode {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-6px); }
+      }
+
+      .animated-stream {
+        stroke-dasharray: 20, 40;
+        animation: streamFlow 12s linear infinite;
+      }
+      .animated-stream-rev {
+        stroke-dasharray: 15, 30;
+        animation: streamFlow 16s linear infinite reverse;
+      }
+      .pulse-orb {
+        animation: pulseGlow 6s ease-in-out infinite alternate;
+        transform-origin: center;
+      }
+      .floating-card-1 {
+        animation: floatNode 5s ease-in-out infinite;
+      }
+      .floating-card-2 {
+        animation: floatNode 6s ease-in-out 1s infinite;
+      }
+      .floating-card-3 {
+        animation: floatNode 5.5s ease-in-out 2s infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgGradient)" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- Subtle Grid Lines -->
+  <g stroke="#1e293b" stroke-width="0.8" opacity="0.35">
+    <line x1="0" y1="70" x2="1200" y2="70" />
+    <line x1="0" y1="140" x2="1200" y2="140" />
+    <line x1="0" y1="210" x2="1200" y2="210" />
+    <line x1="0" y1="280" x2="1200" y2="280" />
+    <line x1="0" y1="350" x2="1200" y2="350" />
+    <line x1="150" y1="0" x2="150" y2="420" />
+    <line x1="300" y1="0" x2="300" y2="420" />
+    <line x1="450" y1="0" x2="450" y2="420" />
+    <line x1="600" y1="0" x2="600" y2="420" />
+    <line x1="750" y1="0" x2="750" y2="420" />
+    <line x1="900" y1="0" x2="900" y2="420" />
+    <line x1="1050" y1="0" x2="1050" y2="420" />
+  </g>
+
+  <!-- Ambient Light Orbs (Background) -->
+  <circle cx="1000" cy="120" r="160" fill="#38bdf8" opacity="0.12" filter="url(#glowFilter)" class="pulse-orb" />
+  <circle cx="200" cy="300" r="180" fill="#818cf8" opacity="0.08" filter="url(#glowFilter)" class="pulse-orb" />
+  <circle cx="650" cy="200" r="220" fill="#a855f7" opacity="0.07" filter="url(#glowFilter)" class="pulse-orb" />
+
+  <!-- Animated Parallel Execution Streams / Waveforms (Behind Cards) -->
+  <g fill="none" opacity="0.45">
+    <path class="animated-stream" d="M -50,90 Q 300,160 600,100 T 1250,130" stroke="#38bdf8" stroke-width="2.5" />
+    <path class="animated-stream-rev" d="M -50,180 Q 250,100 580,190 T 1250,170" stroke="#818cf8" stroke-width="2" />
+    <path class="animated-stream" d="M -50,310 Q 350,220 700,320 T 1250,260" stroke="#c084fc" stroke-width="2" />
+  </g>
+
+  <!-- Foreground Main Branding Area -->
+  <g transform="translate(80, 75)">
+    <!-- Category Pill -->
+    <g transform="translate(0, 0)">
+      <rect width="260" height="30" rx="15" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2" opacity="0.9" />
+      <circle cx="16" cy="15" r="5" fill="#38bdf8">
+        <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <text x="32" y="20" class="badge-text">MASSIVELY PARALLEL PROCESSING</text>
+    </g>
+
+    <!-- Title -->
+    <text x="0" y="78" class="title-text">
+      Awesome <tspan fill="url(#primaryGlow)">MPP</tspan> Query Processing
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="118" class="subtitle-text">
+      High-Performance Distributed SQL Engines, Analytical Lakehouses &amp; Columnar Data Warehouses
+    </text>
+  </g>
+
+  <!-- Foreground Architecture Feature Cards (Distributed Execution Visuals) -->
+  <g transform="translate(80, 245)">
+    <!-- Card 1: Vectorized Engine -->
+    <g class="floating-card-1" transform="translate(0, 0)">
+      <rect width="320" height="110" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.2" />
+      <rect x="18" y="20" width="38" height="38" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2" />
+      <!-- Vector / Parallel Icon -->
+      <path d="M28 32 L46 32 M28 39 L46 39 M28 46 L40 46" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" />
+      <text x="68" y="38" class="metric-title">Shared-Nothing Engine</text>
+      <text x="68" y="58" class="metric-sub">Horizontal node scalability with zero</text>
+      <text x="68" y="74" class="metric-sub">inter-node resource contention</text>
+      <circle cx="295" cy="28" r="4" fill="#10b981" />
+    </g>
+
+    <!-- Card 2: Distributed Query Coordination -->
+    <g class="floating-card-2" transform="translate(355, 0)">
+      <rect width="320" height="110" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.2" />
+      <rect x="18" y="20" width="38" height="38" rx="8" fill="#0f172a" stroke="#818cf8" stroke-width="1.2" />
+      <!-- Query Tree Icon -->
+      <path d="M37 28 L37 40 M37 34 L27 46 M37 34 L47 46" stroke="#818cf8" stroke-width="2" stroke-linecap="round" />
+      <text x="68" y="38" class="metric-title">Distributed Plan &amp; Shuffle</text>
+      <text x="68" y="58" class="metric-sub">Multi-stage partition exchanges &amp;</text>
+      <text x="68" y="74" class="metric-sub">dynamic adaptive query compilation</text>
+      <circle cx="295" cy="28" r="4" fill="#38bdf8" />
+    </g>
+
+    <!-- Card 3: Cloud Elasticity & Lakehouse -->
+    <g class="floating-card-3" transform="translate(710, 0)">
+      <rect width="330" height="110" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.2" />
+      <rect x="18" y="20" width="38" height="38" rx="8" fill="#0f172a" stroke="#c084fc" stroke-width="1.2" />
+      <!-- Cloud/Storage Icon -->
+      <path d="M26 42 A 6 6 0 0 1 32 34 A 8 8 0 0 1 44 34 A 6 6 0 0 1 48 42 Z" stroke="#c084fc" stroke-width="2" fill="none" stroke-linejoin="round" />
+      <text x="68" y="38" class="metric-title">Decoupled Cloud Compute</text>
+      <text x="68" y="58" class="metric-sub">Elastic virtual compute clusters over</text>
+      <text x="68" y="74" class="metric-sub">Iceberg, Parquet &amp; cloud object stores</text>
+      <circle cx="305" cy="28" r="4" fill="#c084fc" />
+    </g>
+  </g>
+</svg>
