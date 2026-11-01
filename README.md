@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Massively-Parallel-Query-Processing/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Massively-Parallel-Query-Processing?style=flat-square&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Massively-Parallel-Query-Processing/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Massively-Parallel-Query-Processing?style=flat-square&color=gold" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Massively-Parallel-Query-Processing/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Massively-Parallel-Query-Processing?style=flat-square&color=blue" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Massively-Parallel-Query-Processing/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Massively-Parallel-Query-Processing/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License"/></a>
@@ -65,75 +65,75 @@ Below is a curated breakdown of industry-leading commercial and SaaS Massively P
 
 ## 🔓 Open-Source GitHub Projects
 
-Explore the top open-source distributed SQL query engines and MPP analytical databases, sorted in descending order by **GitHub Star Count**:
+Explore the top open-source distributed SQL query engines and MPP analytical databases, sorted in descending order by **GitHub Stars_Count**:
 
-### 1. ⚡ [ClickHouse](https://github.com/ClickHouse/ClickHouse) [![GitHub stars](https://img.shields.io/github/stars/ClickHouse/ClickHouse?style=social&color=white)](https://github.com/ClickHouse/ClickHouse/stargazers)
+### 1. ⚡ [ClickHouse](https://github.com/ClickHouse/ClickHouse) [![GitHub_Stars](https://img.shields.io/github/stars/ClickHouse/ClickHouse?style=social&color=white)](https://github.com/ClickHouse/ClickHouse/stargazers)
 - **Primary Architecture:** Vectorized Columnar MPP Engine (C++)
 - **License:** Apache-2.0
 - **Key Capabilities:** Extreme throughput aggregation on massive tables, SIMD-vectorized execution, MergeTree storage engine family, and parallel replicas for distributed query coordination across nodes.
 - **Best For:** High-velocity real-time event analytics, log processing, and real-time observability telemetry.
 
-### 2. 🦆 [DuckDB](https://github.com/duckdb/duckdb) [![GitHub stars](https://img.shields.io/github/stars/duckdb/duckdb?style=social&color=white)](https://github.com/duckdb/duckdb/stargazers)
+### 2. 🦆 [DuckDB](https://github.com/duckdb/duckdb) [![GitHub_Stars](https://img.shields.io/github/stars/duckdb/duckdb?style=social&color=white)](https://github.com/duckdb/duckdb/stargazers)
 - **Primary Architecture:** In-Process Vectorized Analytical Query Engine (C++)
 - **License:** MIT
 - **Key Capabilities:** Columnar data representation, vectorized query execution, zero-dependency embedded runtime, direct querying of Parquet, CSV, and Arrow files, and automatic multi-threaded query parallelism across all available CPU cores.
 - **Best For:** Single-node ultra-fast interactive analytics, data science pipelines, and embedded analytical applications.
 
-### 3. 🌐 [TiDB / TiFlash](https://github.com/pingcap/tidb) [![GitHub stars](https://img.shields.io/github/stars/pingcap/tidb)](https://github.com/pingcap/tidb/stargazers)
+### 3. 🌐 [TiDB / TiFlash](https://github.com/pingcap/tidb) [![GitHub_Stars](https://img.shields.io/github/stars/pingcap/tidb)](https://github.com/pingcap/tidb/stargazers)
 - **Primary Architecture:** Distributed HTAP Database with Columnar MPP Extension (Go / C++ / Rust)
 - **License:** Apache-2.0
 - **Key Capabilities:** MySQL syntax compatibility, horizontal scalability with Raft consensus, and TiFlash columnar learner replicas that support real-time distributed MPP query plans isolated from OLTP transactional workloads.
 - **Best For:** Hybrid Transactional/Analytical Processing (HTAP) with real-time reporting on live transactional data.
 
-### 4. 🦅 [Presto](https://github.com/prestodb/presto) [![GitHub stars](https://img.shields.io/github/stars/prestodb/presto?style=social&color=white)](https://github.com/prestodb/presto/stargazers)
+### 4. 🦅 [Presto](https://github.com/prestodb/presto) [![GitHub_Stars](https://img.shields.io/github/stars/prestodb/presto?style=social&color=white)](https://github.com/prestodb/presto/stargazers)
 - **Primary Architecture:** Distributed SQL Query Engine for Big Data (Java)
 - **License:** Apache-2.0
 - **Key Capabilities:** Original MPP query engine developed at Meta; distributed coordinator-worker architecture, in-memory pipelined execution across hundreds of data sources via connectors without ETL.
 - **Best For:** Petabyte-scale ad-hoc analytics across data lakes (HDFS, Amazon S3, Ceph) and multi-source federation.
 
-### 5. 🐬 [Apache Doris](https://github.com/apache/doris) [![GitHub stars](https://img.shields.io/github/stars/apache/doris?style=social&color=white)](https://github.com/apache/doris/stargazers)
+### 5. 🐬 [Apache Doris](https://github.com/apache/doris) [![GitHub_Stars](https://img.shields.io/github/stars/apache/doris?style=social&color=white)](https://github.com/apache/doris/stargazers)
 - **Primary Architecture:** Real-Time MPP Analytical Database (C++ / Java)
 - **License:** Apache-2.0
 - **Key Capabilities:** MySQL protocol compatibility, vectorized execution engine, cost-based optimizer (CBO), inverted indexing for full-text search, and real-time upserts via primary key tables.
 - **Best For:** Real-time dashboards, interactive reporting, multi-table joins, and migrating from legacy OLAP cubes.
 
-### 6. 🗡️ [Trino](https://github.com/trinodb/trino) [![GitHub stars](https://img.shields.io/github/stars/trinodb/trino?style=social&color=white)](https://github.com/trinodb/trino/stargazers)
+### 6. 🗡️ [Trino](https://github.com/trinodb/trino) [![GitHub_Stars](https://img.shields.io/github/stars/trinodb/trino?style=social&color=white)](https://github.com/trinodb/trino/stargazers)
 - **Primary Architecture:** High-Performance Distributed SQL Engine (Java)
 - **License:** Apache-2.0
 - **Key Capabilities:** Decoupled compute-over-storage execution, dynamic connector architecture, push-down optimization, fault-tolerant execution mode with checkpoint exchange, and ANSI SQL compliance across Apache Iceberg, Delta Lake, and object stores.
 - **Best For:** Enterprise open lakehouse analytics, cross-database federated querying, and high-concurrency BI dashboards.
 
-### 7. 🐘 [Citus](https://github.com/citusdata/citus) [![GitHub stars](https://img.shields.io/github/stars/citusdata/citus?style=social&color=white)](https://github.com/citusdata/citus/stargazers)
+### 7. 🐘 [Citus](https://github.com/citusdata/citus) [![GitHub_Stars](https://img.shields.io/github/stars/citusdata/citus?style=social&color=white)](https://github.com/citusdata/citus/stargazers)
 - **Primary Architecture:** Distributed PostgreSQL MPP Extension (C)
 - **License:** AGPL-3.0 / Apache-2.0 (Extensions)
 - **Key Capabilities:** Transforms standard PostgreSQL into a distributed database; shards data across multiple nodes with distributed tables, reference tables, and distributed query planning with full PostgreSQL feature compatibility.
 - **Best For:** Scaling multi-tenant SaaS applications and real-time analytical dashboards using existing PostgreSQL skills.
 
-### 8. ⭐ [StarRocks](https://github.com/StarRocks/starrocks) [![GitHub stars](https://img.shields.io/github/stars/StarRocks/starrocks?style=social&color=white)](https://github.com/StarRocks/starrocks/stargazers)
+### 8. ⭐ [StarRocks](https://github.com/StarRocks/starrocks) [![GitHub_Stars](https://img.shields.io/github/stars/StarRocks/starrocks?style=social&color=white)](https://github.com/StarRocks/starrocks/stargazers)
 - **Primary Architecture:** Next-Gen Real-Time MPP Lakehouse Engine (C++)
 - **License:** Apache-2.0
 - **Key Capabilities:** Fully vectorized SIMD execution pipeline, cost-based query optimizer (CBO), transparent asynchronous materialized views, and accelerated direct caching over cloud object storage and Iceberg/Hudi tables.
 - **Best For:** Sub-second real-time queries, complex star-schema multi-table joins, and unified batch/streaming lakehouse analytics.
 
-### 9. 🏹 [Apache DataFusion](https://github.com/apache/datafusion) [![GitHub stars](https://img.shields.io/github/stars/apache/datafusion?style=social&color=white)](https://github.com/apache/datafusion/stargazers)
+### 9. 🏹 [Apache DataFusion](https://github.com/apache/datafusion) [![GitHub_Stars](https://img.shields.io/github/stars/apache/datafusion?style=social&color=white)](https://github.com/apache/datafusion/stargazers)
 - **Primary Architecture:** Extensible Vectorized SQL Engine Library (Rust)
 - **License:** Apache-2.0
 - **Key Capabilities:** Native Apache Arrow memory representation, multi-threaded parallel execution model, modular extensible planner, and lightweight embeddable architecture without runtime bloat.
 - **Best For:** Building custom distributed compute engines, analytical microservices, and high-performance dataframe runtimes.
 
-### 10. 🍷 [Apache Pinot](https://github.com/apache/pinot) [![GitHub stars](https://img.shields.io/github/stars/apache/pinot?style=social&color=white)](https://github.com/apache/pinot/stargazers)
+### 10. 🍷 [Apache Pinot](https://github.com/apache/pinot) [![GitHub_Stars](https://img.shields.io/github/stars/apache/pinot?style=social&color=white)](https://github.com/apache/pinot/stargazers)
 - **Primary Architecture:** Real-Time Distributed OLAP Datastore (Java)
 - **License:** Apache-2.0
 - **Key Capabilities:** Low-latency distributed query routing via Helix cluster management, column-oriented indexing (star-tree index, sorted index, range index), and sub-second ingestion from Apache Kafka.
 - **Best For:** User-facing analytics, high-QPS external dashboards, and sub-second anomaly detection at LinkedIn/Uber scale.
 
-### 11. 🔨 [Apache Drill](https://github.com/apache/drill) [![GitHub stars](https://img.shields.io/github/stars/apache/drill?style=social&color=white)](https://github.com/apache/drill/stargazers)
+### 11. 🔨 [Apache Drill](https://github.com/apache/drill) [![GitHub_Stars](https://img.shields.io/github/stars/apache/drill?style=social&color=white)](https://github.com/apache/drill/stargazers)
 - **Primary Architecture:** Schema-Free Distributed SQL Query Engine (Java)
 - **License:** Apache-2.0
 - **Key Capabilities:** Distributed "Drillbit" execution nodes, dynamic schema discovery at execution time, nested data traversal (JSON, Avro, Parquet), and zero-schema upfront ETL requirements.
 - **Best For:** Self-service ad-hoc exploration of unstructured and semi-structured datasets stored in NoSQL or S3.
 
-### 12. 🍓 [Apache Cloudberry (Incubating)](https://github.com/apache/cloudberry) [![GitHub stars](https://img.shields.io/github/stars/apache/cloudberry?style=social&color=white)](https://github.com/apache/cloudberry/stargazers)
+### 12. 🍓 [Apache Cloudberry (Incubating)](https://github.com/apache/cloudberry) [![GitHub_Stars](https://img.shields.io/github/stars/apache/cloudberry?style=social&color=white)](https://github.com/apache/cloudberry/stargazers)
 - **Primary Architecture:** Shared-Nothing PostgreSQL-based MPP Database (C)
 - **License:** Apache-2.0
 - **Key Capabilities:** The next-generation open-source evolution of Greenplum Database; master-segment coordinator architecture, query slicing with inter-node motion operators, and columnar/row hybrid tables with Orca advanced cost-based optimizer.
